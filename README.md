@@ -1,4 +1,4 @@
-# Website of PanoRadar
+# Website of M<sup>3</sup>oCap
 This is the repository that contains source code for the PanoRadar website.
 
 Our paper: **Enabling Visual Recognition at Radio Frequency**
