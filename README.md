@@ -1,9 +1,9 @@
 # Website of M<sup>3</sup>oCap
-This is the repository that contains source code for the PanoRadar website.
+This is the repository that contains source code for the M<sup>3</sup>oCap website.
 
-Our paper: **Enabling Visual Recognition at Radio Frequency**
+Our paper: **Motion Capture With Millimeter-Wave Tags**
 
-If you find PanoRadar useful for your work please cite:
+If you find M<sup>3</sup>oCap useful for your work please cite:
 ```tex
 @inproceedings{panoradar,
   title={Enabling Visual Recognition at Radio Frequency},
