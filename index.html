@@ -1,169 +1,84 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
-  <meta name="description" content="Motion Capture with Millimeter-Wave Tags">
-  <meta name="keywords" content="MoCap, M3oCap, Motion Capture, , RF Sensing, mmWave Radar, Localization, Robust Perception">
+  <meta name="description" content="M³oCap is a millimeter-wave tag-based motion capture system that delivers accurate 6-DoF tracking at 1000 measurements per second using a single commercial mmWave radar and low-cost backscatter tags. SenSys 2026.">
+  <meta name="keywords" content="M3oCap, MoCap, Motion Capture, mmWave Sensing, Backscatter Tags, 6-DoF Tracking, RF Localization, mmWave Radar">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Motion Capture with Millimeter-Wave Tags</title>
+  <title>M&sup3;oCap: Motion Capture with Millimeter-Wave Tags</title>
+
+  <!-- Social media previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="M³oCap: Motion Capture with Millimeter-Wave Tags">
+  <meta property="og:description" content="Accurate 6-DoF motion capture at 1000 fps with a single commercial mmWave radar and low-cost backscatter tags. SenSys 2026.">
+  <meta property="og:url" content="https://freddyliu06.github.io/m3ocap_website/">
+  <meta property="og:image" content="https://freddyliu06.github.io/m3ocap_website/resources/images/teaser.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
 
-  <link rel="stylesheet" href="https://FreddyLiu06.github.io/m3ocap_website/static/css/bulma.min.css">
-  <link rel="stylesheet" href="https://FreddyLiu06.github.io/m3ocap_website/static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="https://FreddyLiu06.github.io/m3ocap_website/static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="https://FreddyLiu06.github.io/m3ocap_website/static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="https://FreddyLiu06.github.io/m3ocap_website/static/css/index.css">
-  <link rel="icon" href="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/images/favicon.png">
+  <link rel="stylesheet" href="static/css/index.css">
+  <!-- <link rel="icon" type="image/png" href="resources/images/favicon.png"> -->
+  <link rel="apple-touch-icon" href="resources/images/apple-touch-icon.png">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://FreddyLiu06.github.io/m3ocap_website/static/js/fontawesome.all.min.js"></script>
-  <script src="https://FreddyLiu06.github.io/m3ocap_website/static/js/bulma-carousel.min.js"></script>
-  <script src="https://FreddyLiu06.github.io/m3ocap_website/static/js/bulma-slider.min.js"></script>
-  <script src="https://FreddyLiu06.github.io/m3ocap_website/static/js/index.js"></script>
-
-  <!-- Navigation Bar -->
-  <nav class="navbar" role="navigation" aria-label="main navigation">
-    <div class="navbar-brand">
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-        <span aria-hidden="true"></span>
-      </a>
-    </div>
-    <div class="navbar-menu">
-      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
-        <!-- <a class="navbar-item" href="https://haowenlai.github.io">
-          <span class="icon"><i class="fas fa-home"></i></span>
-        </a> -->
-  
-        <div class="navbar-item has-dropdown is-hoverable">
-          <a class="navbar-link">More Research</a>
-          <div class="navbar-dropdown">
-            <a class="navbar-item" href="https://waves.seas.upenn.edu/projects/panoradar">PanoRadar</a>
-            <a class="navbar-item" href="https://waves.seas.upenn.edu/projects/cartoradar">CartoRadar</a>
-            <a class="navbar-item" href="https://waves.seas.upenn.edu/projects/holoradar">HoloRadar</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 
 <body>
+
 <section class="hero">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">M<sup>3</sup>oCap: Motion Capture with Millimeter-Wave Tags</h1>
+          <h1 class="title is-1 publication-title">M<sup>3</sup>oCap: Motion Capture with Millimeter-Wave Tags</h1>
           <div class="is-size-4 publication-authors">
             <span class="author-block">
-              <a href="" target="_blank">Xin Yang</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://freddyliu06.github.io" target="_blank">Freddy Yifei Liu</a><sup>2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://freddyliu06.github.io" target="_blank">Yunshuang Li</a><sup>3</sup>&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="" target="_blank">Yao Gong</a>
+              <a href="https://xy-zinc.github.io/" target="_blank">Xin Yang</a><sup>1,2</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://freddyliu06.github.io" target="_blank">Freddy Yifei Liu</a><sup>1,3</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://li-yunshuang.github.io/" target="_blank">Yunshuang Li</a><sup>1,4</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="" target="_blank">Yao Gong</a><sup>1</sup>
             </span><br>
             <span class="author-block">
-              <a href="">Dinesh Jayaraman</a>&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="">Omid Abari</a>&nbsp;&nbsp;&nbsp;&nbsp;
-              <a href="https://www.cis.upenn.edu/~mingminz" target="_blank">Mingmin Zhao</a>
-              <br/> University of Pennsylvania
+              <a href="https://www.seas.upenn.edu/~dineshj/">Dinesh Jayaraman</a><sup>1</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://web.cs.ucla.edu/~omid/">Omid Abari</a><sup>5</sup>&nbsp;&nbsp;&nbsp;&nbsp;
+              <a href="https://www.cis.upenn.edu/~mingminz" target="_blank">Mingmin Zhao</a><sup>1</sup>
+              <br/> <sup>1</sup>University of Pennsylvania, <sup>2</sup>Hong Kong University of Science and Technology (Guangzhou)<br><sup>3</sup>Carnegie Mellon University, <sup>4</sup>University of Southern California, <sup>5</sup>University of California, Los Angeles
               <span class="brmod"><strong><a href="https://sensys.acm.org/2026/" target="_blank">SenSys 2026</a></strong></span>
-              <!-- <span class="publication-awards">
-                &#127942; Best Demo Award!<br>
-                &#127942; 1st Place in Student Research Competition!<br>
-              </span> -->
-              <br/>
-              <!-- <div>  Artifact pictures
-                <img src='https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/images/artifacts_available_v1_1.png' width=100px>
-                <img src='https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/images/artifacts_evaluated_functional_v1_1.png' width=100px>
-                <img src='https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/images/artifacts_evaluated_reusable_v1_1.png' width=100px>
-                <img src='https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/images/results_reproduced_v1_1.png' width=100px>
-              </div> -->
             </span>
           </div>
           <div class="column has-text-centered">
             <div class="publication-links">
-              <!-- PDF Link. -->
+              <!-- Paper Link. -->
               <span class="link-block">
-                <a href="https://dl.acm.org/doi/abs/10.1145/3636534.3649369" 
+                <a href="https://dl.acm.org/doi/10.1145/3774906.3800488"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
                   <span class="icon"><i class="fas fa-file-pdf"></i></span>
                   <span>Paper</span>
                 </a>
               </span>
-              <!-- ACM Digital Library. -->
-              <!-- <span class="link-block">
-                <a href="xxxx"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-acmdl"></i>
-                  </span>
-                  <span>ACM DL</span>
-                </a>
-              </span> -->
-              <!-- Arxiv Link. -->
-              <!-- <span class="link-block">
-                <a href="xxxx"
-                   class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
-                </a>
-              </span> -->
-              <!-- Video Link. -->
-              <!-- <span class="link-block">
-                <a class="external-link button is-normal is-rounded is-dark jump-in-page" data-target="demo-video">
-                  <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                  </span>
-                  <span>Video</span>
-                </a>
-              </span> -->
               <!-- Code Link. -->
               <span class="link-block">
-                <a href="https://github.com/penn-waves-lab/PanoRadar"
+                <a href="https://github.com/FreddyLiu06/M3oCap"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
-                  <span class="icon">
-                      <i class="fab fa-github"></i>
-                  </span>
+                  <span class="icon"><i class="fab fa-github"></i></span>
                   <span>Code</span>
                 </a>
               </span>
               <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://upenn.box.com/v/panoradar-dataset"
+              <span class="link-block">
+                <a href="https://cmu.box.com/s/b0ttkk84kwqx14a2p1bfzghcjs8yn8wc"
                    class="external-link button is-normal is-rounded is-dark" target="_blank">
-                  <span class="icon">
-                      <i class="far fa-images"></i>
-                  </span>
+                  <span class="icon"><i class="fas fa-database"></i></span>
                   <span>Dataset</span>
                 </a>
-              </span> -->
-              <!-- Dataset Link. -->
-              <!-- <span class="link-block">
-                <a href="https://ai.seas.upenn.edu/news/giving-robots-superhuman-vision-using-radio-signals"
-                   class="external-link button is-normal is-rounded is-dark" target="_blank">
-                  <span class="icon">
-                      <i class="far fa-solid fa-newspaper"></i>
-                  </span>
-                  <span>News</span>
-                </a>
-              </span> -->
-              <!-- Slides Link. -->
-              <!-- <span class="link-block">
-                <a href="xxxx"
-                   class="external-link button is-normal is-rounded is-dark" target="_blank">
-                  <span class="icon">
-                      <i class="fa fa-list"></i>
-                  </span>
-                  <span>Slides (coming soon)</span>
-                </a>
-              </span> -->
+              </span>
             </div>
           </div>
         </div>
@@ -172,91 +87,87 @@
   </div>
 </section>
 
+
 <!-- Teaser Figure -->
 <section class="hero">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <video id="teaser" autoplay muted loop playsinline height="100%">
-        <source src="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/videos/teaser.mp4" type="video/mp4">
-      </video>
+      <img src="resources/images/teaser.jpg" width="1321" height="688" class="teaser-image"
+           alt="M3oCap tracking a tossed box, boxes grabbed by a robot, and human body pose with mmWave tags">
       <div class="has-text-centered">
-        <span class="panoradar">PanoRadar</span> is a novel RF imaging system capable of 3D panoramic sensing. 
-        Its high-resolution imaging results enable a variety of visual recognition tasks at radio frequency.
+        <span class="m3ocap">M<sup>3</sup>oCap</span> tracks tagged objects in 6-DoF at 1000 frames per second
+        with millimeter-level accuracy, using a single commercial mmWave radar and low-cost backscatter tags.
       </div>
     </div>
   </div>
 </section>
 
+
 <!-- Abstract -->
 <section class="section">
-  <div class="container">
+  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h3 class="title is-3">Abstract</h3>
         <div class="content has-text-justified">
           <p>
-            <span class="panoradar">PanoRadar</span> is the first RF imaging system that brings RF resolution close to that of LiDAR, 
-            while providing resilience against conditions challenging for optical signals. 
-            Our LiDAR-comparable 3D imaging results enable, for the first time, a variety of visual recognition tasks at radio frequency,
-            including surface normal estimation, semantic segmentation, and object detection. 
+            This paper introduces <span class="m3ocap">M<sup>3</sup>oCap</span>, a millimeter-wave (mmWave) tag-based motion capture system
+            that delivers accurate 6 degrees of freedom motion tracking. <span class="m3ocap">M<sup>3</sup>oCap</span> utilizes a single
+            commercial mmWave radar and custom-designed mmWave backscatter tags (2.5&nbsp;cm &times; 3&nbsp;cm) to localize and track the
+            motion of tagged objects. Our system features novel algorithms that effectively isolate weak backscattered signals while
+            accurately recovering phase changes induced by motion, allowing high-rate tracking of tag movements.
           </p>
           <p>
-            <span class="panoradar">PanoRadar</span> utilizes a rotating single-chip mmWave radar, 
-            along with a combination of novel signal processing and machine learning algorithms, 
-            to create high-resolution 3D images of the surroundings. 
-            Our system accurately estimates robot motion, allowing for coherent imaging through a dense grid of synthetic antennas. 
-            It also exploits the high azimuth resolution to enhance elevation resolution using learning-based methods. 
-            Furthermore, <span class="panoradar">PanoRadar</span> tackles 3D learning via 2D convolutions and specifically addresses challenges
-            due to the unique characteristics of RF signals. Our results demonstrate <span class="panoradar">PanoRadar</span>'s robust performance across 12 buildings.
+            Experiments show that <span class="m3ocap">M<sup>3</sup>oCap</span> achieves performance close to commercial motion capture
+            systems &ndash; it provides 1000 measurements per second with a median range tracking accuracy of 250&nbsp;&micro;m, median
+            localization accuracies of 3.34&nbsp;mm, 3.95&nbsp;mm, and 4.20&nbsp;mm in x, y, z dimensions, and median orientation tracking
+            accuracies of 1.7&deg;, 2.3&deg;, and 2.0&deg; across pitch, roll, and yaw. We further demonstrate the system's fine-grained
+            movement tracking capabilities through various motion capture tasks.
           </p>
         </div>
       </div>
     </div>
   </div>
 </section>
-
-
-<!-- Paper video. -->
-<section class="section">
-  <div class="container">
-    <div id="demo-video" class="columns is-centered has-text-centered">
-      <div class="column is-three-quarters">
-        <h3 class="title is-3">Demo Video</h3>
-        <div class="publication-video">
-          <iframe type="text/html" width="1280" height="720" src="https://www.youtube.com/embed/dKyQ1XuPorU?si=2C2en68cLWDNOS41" 
-                  title="PanoRadar Teaser Video" frameborder="0" 
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                  allowfullscreen>
-          </iframe>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 
 <!-- Overview -->
 <section class="section">
-  <div class="container">
+  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h3 class="title is-3">System Overview</h3>
-        <div class="content has-text-centered">
-          <video id="matting-video" autoplay muted loop playsinline width="75%">
-            <source src="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/videos/overview.mp4" type="video/mp4">
-          </video>
+        <div class="columns is-vcentered">
+          <div class="column is-half">
+            <figure class="paper-figure">
+              <img src="resources/images/tag.jpg" width="1282" height="600"
+                   alt="M3oCap tag next to a coin: a 25 mm by 30 mm board with a 4x4 antenna array, diodes, and an oscillator">
+            </figure>
+          </div>
+          <div class="column is-half">
+            <div class="content has-text-justified">
+              <p>
+                <span class="m3ocap">M<sup>3</sup>oCap</span> pairs a commercial 60&nbsp;GHz mmWave radar with our custom
+                <strong>retro-reflective backscatter tags</strong>. Each 2.5&nbsp;cm &times; 3&nbsp;cm tag uses a 4&times;4 Van Atta
+                array to reflect radar signals back toward the radar, while low-power diodes modulate the reflection.
+                A tag uses under 283&nbsp;&micro;W and costs about $39.
+              </p>
+            </div>
+          </div>
         </div>
+        <figure class="paper-figure">
+          <img src="resources/images/phase_extraction.png" width="2000" height="512"
+               alt="Signal processing pipeline: spectrum, band-pass filtering, IFFT, and multiplication of the two shifted tag signals">
+        </figure>
         <div class="content has-text-justified">
-          <p>This figure illustrates the system architecture of <span class="panoradar">PanoRadar</span>, consisting of four components:</p>
+          <p>Our signal processing pipeline (above) has three key components:</p>
           <ol>
-            <li><strong>3D imaging with a rotating radar:</strong> the radar's 8 antennas are placed vertically, which forms a dense 
-                cylindrical array (8&times;1200) when rotating.</li>
-            <li><strong>Motion estimation and compensation:</strong> our novel algorithms for accurate robot motion estimation, combined
-                with efficient imaging algorithms that include compensation, enable deployment on mobile robot platforms.</li>
-            <li><strong>Vertical resolution enhancement:</strong> due to limited number of vertical antennas, a resolution enhancement model
-                is used to for range image estimation. Our ML model efficiently learns 3D structures with 2D models.</li>
-            <li><strong>Downstream visual recognition tasks:</strong> the high-resolution range images enable various downstream recognition tasks,
-                including surface normal estimation, semantic segmentation, object detection, and human localization</li>
+            <li><strong>Single-chirp signal isolation:</strong> tag modulation shifts the tag signal into frequency bands free of
+                background reflections (a), isolating it within a single chirp, even when people or objects move nearby.</li>
+            <li><strong>High-rate phase measurement:</strong> band-pass filters extract the two frequency-shifted copies of the tag
+                signal (b, c), and multiplying them cancels modulation noise (d), recovering the precise motion-induced phase at
+                1000&nbsp;fps.</li>
+            <li><strong>Multi-tag 6-DoF tracking:</strong> phase-based matching identifies each tag, and three or more tags on an object
+                give its 3D orientation in addition to its position.</li>
           </ol>
         </div>
       </div>
@@ -265,70 +176,25 @@
 </section>
 
 
-<!-- Enhance Elevation Resolution -->
+<!-- Results -->
 <section class="section">
-  <div class="container">
+  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
-        <h3 class="title is-3">Enhancing Elevation Resolution</h2>
-        <div class="content has-text-justified">
-          <p>
-            Through signal processing alone, <span class="panoradar">PanoRadar</span> has achieved fine-grained resolution in both the azimuth and 
-            range dimensions. However, the elevation resolution remains limited, especially when compared to the other dimensions. The signal processing
-            results are marked with "After SP" below.
-          </p>
-          <p>
-            Given the structural properties inherent in 3D environments, spatial dimensions are not independent.
-            For instance, consistent depth cues from surfaces, as well as gravity constraints (e.g., humans and objects need support and stand on the floor), provide cross-dimensional information.
-            We leverage machine learning to make use of these cross-dimensional dependencies for elevation resolution enhancement.
-            Final imaging results are marked with "After ML".
-          </p>
+        <h3 class="title is-3">Motion Capture Results</h3>
+        <figure class="paper-figure is-medium">
+          <img src="resources/images/applications.jpg" width="1329" height="448"
+               alt="Tossed box tracking and robotic arm stacking with reconstructed 3D trajectories">
+        </figure>
+        <figure class="paper-figure is-medium">
+          <img src="resources/images/human_pose.jpg" width="1355" height="407"
+               alt="Three human poses captured with tags on a jacket and the reconstructed skeletons">
+        </figure>
+        <div class="has-text-centered">
+          Reconstructed trajectories of a box tossed in the air (median 3D error 9.69&nbsp;mm) and cubes stacked by a robotic arm
+          (8.12&nbsp;mm), compared to ground truth, and human poses captured from tags placed on clothing.
         </div>
       </div>
-    </div>
-  </div>
-  <div class="container hero-body">
-    <div id="results-carousel" class="carousel results-carousel">
-      <div class="item item-fisher-000">
-        <video poster="" id="fisher-000" autoplay muted loop playsinline height="100%">
-          <source src="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/videos/fisher_000.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="item item-levine-north-004">
-        <video poster="" id="levine-north-004" autoplay muted loop playsinline height="100%">
-          <source src="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/videos/levine_north_004.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="item item-fisher-000-2">
-        <video poster="" id="fisher-000-2" autoplay muted loop playsinline height="100%">
-          <source src="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/videos/fisher_000_2.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="item item-DRL-006">
-        <video poster="" id="DRL-006" autoplay muted loop playsinline height="100%">
-          <source src="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/videos/DRL_006.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="item item-levine-002">
-        <video poster="" id="levine-002" autoplay muted loop playsinline height="100%">
-          <source src="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/videos/levine_002.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="item item-levine-006">
-        <video poster="" id="levine-006" autoplay muted loop playsinline height="100%">
-          <source src="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/videos/levine_006.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="item item-levine-006-2">
-        <video poster="" id="levine-006-2" autoplay muted loop playsinline height="100%">
-          <source src="https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/videos/levine_006_2.mp4" type="video/mp4">
-        </video>
-      </div>
-    </div>
-    <div class="has-text-centered">
-      The imaging results are presented in both range image and point cloud views.
-      Signal processing results are labeled as "After SP", while machine learning results are labeled as "After ML".
-      For point clouds given by ML, each point is color-coded according to the predicted semantic categories.
     </div>
   </div>
 </section>
@@ -336,22 +202,16 @@
 
 <!-- Code and Dataset -->
 <section class="section">
-  <div class="container">
+  <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-full-width">
         <h3 class="title is-3">Code and Dataset</h3>
-        <img src='https://github.com/HaowenLai/PanoRadar-Website/raw/refs/heads/master/resources/images/dataset.png' width="70%">
-        <br/><br/>
         <div class="content has-text-justified">
           <p>
-            Our system is evaluated across 12 diverse buildings, demonstrating its feasibility, accuracy, and robustness in various environments.
-            All ML methods are evaluated with a cross-building approach to ensure the generalization of our model.
-            Specifically, we left out each building for testing while using the rest for training, repeating this process 12 times, once for each building.
-          </p>
-          <p>
-            We release <a href="https://github.com/penn-waves-lab/PanoRadar" target="_blank">code</a> and
-            <a href="https://upenn.box.com/v/panoradar-dataset" target="_blank">dataset</a> to facilitate future research in this direction. Instructions can be found in
-            the readme of our <a href="https://github.com/penn-waves-lab/PanoRadar" target="_blank">github repo</a>.
+            We release <a href="https://github.com/FreddyLiu06/M3oCap" target="_blank">code</a> and
+            <a href="https://cmu.box.com/s/b0ttkk84kwqx14a2p1bfzghcjs8yn8wc" target="_blank">example data</a> to facilitate future research
+            in this direction. Instructions can be found in the readme of our
+            <a href="https://github.com/FreddyLiu06/M3oCap" target="_blank">github repo</a>.
           </p>
         </div>
       </div>
@@ -362,14 +222,17 @@
 
 <!-- BibTeX citation -->
 <section class="section" id="BibTeX">
-  <div class="container">
+  <div class="container is-max-desktop">
     <h3 class="title">BibTeX</h3>
-    <pre><code>@inproceedings{panoradar,
-  title={Enabling Visual Recognition at Radio Frequency},
-  author={Lai, Haowen and Luo, Gaoxiang and Liu, Yifei and Zhao, Mingmin},
-  booktitle={Proceedings of the 30th Annual International Conference on Mobile Computing and Networking (MobiCom)},
-  pages={388--403},
-  year={2024}
+    <pre><code>@inproceedings{m3ocap,
+author = {Yang, Xin and Liu, Freddy Yifei and Li, Yunshuang and Gong, Yao and Jayaraman, Dinesh and Abari, Omid and Zhao, Mingmin},
+title = {Motion Capture with Millimeter-Wave Tags},
+year = {2026},
+doi = {10.1145/3774906.3800488},
+booktitle = {Proceedings of the 2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems},
+pages = {319–333},
+location = {Saint Malo, France},
+series = {SenSys '26}
 }</code></pre>
   </div>
 </section>
@@ -377,30 +240,18 @@
 
 <!-- Acknowledgements -->
 <section class="section" id="Acknowledgements">
-  <div class="container">
+  <div class="container is-max-desktop">
     <h3 class="title">Acknowledgments</h3>
-      <div class="is-vcentered interpolation-panel">
-        <p>
-          This work was carried out in the <a href="https://waves.seas.upenn.edu" target="_blank">WAVES Lab</a>, University of Pennsylvania.
-          We sincerely thank the anonymous reviewers and our shepherd for their insightful comments.
-          We are grateful to Xin Yang, Zitong Lan, Dongyin Hu, Ahhyun Yuh, and Zhiwei Zheng for their feedback.
-          We also thank Yiqiao Liao for his contributions during the early development of this project.
-        </p>
-        <br/>
-        <p>This project page template is adapted from <a href="https://nerfies.github.io" target="_blank">Nerfies</a>.</p>
-      </div>
+    <div class="interpolation-panel">
+      <p>This work was supported by the NSF (CNS-2516559 and CNS-2516558).</p>
+      <br/>
+      <p>This project page template is adapted from <a href="https://nerfies.github.io" target="_blank">Nerfies</a>.</p>
+    </div>
   </div>
 </section>
 
 <br/>
 <br/>
-<br/>
-
-<!-- <footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered"></div>
-  </div>
-</footer> -->
 
 </body>
 </html>

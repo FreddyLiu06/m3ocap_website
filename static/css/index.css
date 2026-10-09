@@ -21,8 +21,13 @@ body {
   font-variant: small-caps;
 }
 
-.panoradar {
-  font-variant: small-caps;
+.m3ocap {
+  white-space: nowrap;
+}
+
+.m3ocap sup,
+.publication-title sup {
+  line-height: 0;
 }
 
 
@@ -88,6 +93,7 @@ body {
 
 .author-block {
   display: inline-block;
+  font-size: 22px;
 }
 
 .publication-banner img {
@@ -178,3 +184,38 @@ body {
   margin-top: 0.5em;
 }
 
+/* Teaser */
+.teaser-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 1.25rem;
+}
+
+/* Figures taken from the paper */
+.paper-figure {
+  margin: 0.5rem auto 1.5rem;
+}
+
+.paper-figure.is-medium {
+  max-width: 720px;
+}
+
+.paper-figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.paper-figure img,
+.teaser-image {
+  cursor: zoom-in;
+}
+
+/* Justified text leaves large gaps on narrow screens */
+@media screen and (max-width: 768px) {
+  .content.has-text-justified {
+    text-align: left !important;
+  }
+}
